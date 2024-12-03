@@ -5,7 +5,7 @@ import pandas as pd
 movies_dict = pickle.load(open('movies.pkl','rb'))
 movies = pd.DataFrame(movies_dict)
 # movies_list = movies_list['title'].values
-similarity = pickle.load(open('similarity.pkl','rb'))
+similarity = pickle.load(open('movies.pkl','rb'))
 
 def recommend(movie):
     movie_index = movies[movies['title'] == movie].index[0]
